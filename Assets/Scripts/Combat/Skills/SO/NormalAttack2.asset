@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db117b2ea8035fa4a8cd833a0786e715, type: 3}
+  m_Name: NormalAttack2
+  m_EditorClassIdentifier: 
+  skillName: BasicAttack2
+  skillId: 2
+  skillDescription: The most basic follow-up attack in game
+  effectType: 0
+  baseValue: 10
+  impulseStrength: 15
+  animationTrigger: Attack2
+  skillDuration: 0.35
+  hitArea: {fileID: 11400000, guid: 6aec9f1169c04294da11ba1a2bbb67b0, type: 2}
+  scalingFactors:
+  - statName: ATK
+    multiplier: 1.5
+  modifiers:
+  - value: 0
+    type: 0
+  - value: 0
+    type: 1
+  skillPrefab: {fileID: 0}
+  skillAnimation: {fileID: 7400000, guid: 3688e492878501d4882fffca4cb3bbff, type: 2}
