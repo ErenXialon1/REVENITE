@@ -4,10 +4,10 @@ AssetOrigin:
   serializedVersion: 1
   productId: 11672
   packageName: Dialogue System for Unity
-  packageVersion: 2.2.53
+  packageVersion: 2.2.55
   assetPath: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/UnityUI/Unity
     - Check Mark.psd
-  uploadId: 754228
+  uploadId: 766604
 TextureImporter:
   internalIDToNameTable:
   - first:

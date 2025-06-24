@@ -49,7 +49,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (inputReader != null)
         {
-            inputReader.MoveEvent += OnMove;
+            inputReader.MovesEvent += OnMove;
         }
         StartCustomUpdate();
     }
@@ -58,7 +58,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (inputReader != null)
         {
-            inputReader.MoveEvent -= OnMove;
+            inputReader.MovesEvent -= OnMove;
         }
         StopCustomUpdate();
     }
@@ -98,12 +98,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (!canMove)
         {
-            if (rb.linearVelocity != Vector2.zero && !velocityCut)
-            {
-                //ResetVelocity();
-                Debug.Log("sıfır");
-            }
-            return;
+            
         }
         // Calculate the desired target speed based on input.
         float targetSpeedX = inputVector.x * maxSpeed;
@@ -162,7 +157,14 @@ public class PlayerMovementController : MonoBehaviour
             yield return new WaitForSeconds(0.05f);//sorun çıkarsa fixedupdate olarak değişebilir
         }
     }
-
+    public void StopCanMove()
+    {
+        canMove = false;
+    }
+    public void StartCanMove()
+    {
+        canMove=true;
+    }
 
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkillData : ScriptableObject
 {
     public string skillName;
-    public int skillId;
+    public int skillIndex;
     public string skillDescription;
     public SkillEffectType effectType;
     public float baseValue;

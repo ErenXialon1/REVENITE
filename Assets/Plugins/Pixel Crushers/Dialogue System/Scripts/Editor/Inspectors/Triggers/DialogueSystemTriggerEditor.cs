@@ -10,7 +10,7 @@ namespace PixelCrushers.DialogueSystem
 {
 
     [CustomEditor(typeof(DialogueSystemTrigger), true)]
-    public class DialogueSystemTriggerEditor : Editor
+    public class DialogueSystemTriggerEditor : UnityEditor.Editor
     {
 
         protected const string InspectorEditorPrefsKey = "PixelCrushers.DialogueSystem.DialogueSystemTriggerPrefs";
@@ -138,6 +138,14 @@ namespace PixelCrushers.DialogueSystem
             EditorGUILayout.PropertyField(triggerProperty, true);
 
             // HelpBox for OnTrigger/Collision:
+            var isStartTypeEvent =
+                triggerProperty.enumValueIndex == 4 || //DialogueSystemTriggerEvent.OnStart
+                triggerProperty.enumValueIndex == 6 || //DialogueSystemTriggerEvent.OnEnable
+                triggerProperty.enumValueIndex == 16;   //DialogueSystemTriggerEvent.OnSaveDataApplied
+            if (isStartTypeEvent)
+            {
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("delayOneFrame"), true);
+            }
             var isPhysicsEvent =
                 triggerProperty.enumValueIndex == 3 || //DialogueSystemTriggerEvent.OnTriggerEnter
                 triggerProperty.enumValueIndex == 7 || //DialogueSystemTriggerEvent.OnTriggerExit

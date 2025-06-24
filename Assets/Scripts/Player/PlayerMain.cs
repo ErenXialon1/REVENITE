@@ -21,24 +21,17 @@ public class PlayerMain : MonoBehaviour
         stateMachine.Initialize(idleState);
     }
 
-    private void OnEnable()
-    {
-        if (inputReader != null)
-        {
-            inputReader.AttackEvent += OnAttackInput;
-        }
-    }
+   
 
-    private void OnDisable()
+   
+    public void StartAttack(ComboData combo, int step)
     {
-        if (inputReader != null)
+        // ComboManager'dan gelen bilgiyle doðru SkillData'yý al
+        if (step < combo.ComboSkills.Count)
         {
-            inputReader.AttackEvent -= OnAttackInput;
+            SkillData skillToExecute = combo.ComboSkills[step];
+            // PlayerAttackState'e bu yeteneði yapmasýný söyleyerek state'i deðiþtir.
+            stateMachine.ChangeState(new PlayerAttackState(stateMachine, movementController, combatController, skillToExecute));
         }
-    }
-
-    private void OnAttackInput()
-    {
-        stateMachine.ChangeState(new PlayerAttackState(stateMachine, movementController, combatController));
     }
 }

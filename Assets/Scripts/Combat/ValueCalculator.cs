@@ -20,6 +20,7 @@ public class ValueCalculator
             var stat = attacker.GetStat(scale.statName);
             if (stat != null)
                 result += stat.CalculateFinalValue() * scale.multiplier;
+            
         }
 
         foreach (var modifierDef in skillData.modifiers)

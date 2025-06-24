@@ -8,19 +8,21 @@ public class PlayerAttackState : IPlayerState
 
     
     private float attackTimer;
+    private SkillData skillToPerform;
 
-    public PlayerAttackState(PlayerStateMachine stateMachine, PlayerMovementController movementController, CombatController combatController)
+    public PlayerAttackState(PlayerStateMachine stateMachine, PlayerMovementController movementController, CombatController combatController, SkillData skill)
     {
         this.stateMachine = stateMachine;
         this.movementController = movementController;
         this.combatController = combatController;
+        this.skillToPerform = skill; // Hangi yeteneðin yapýlacaðýný sakla
     }
+   
     public void Enter()
     {
         movementController.canMove = false;
-        combatController.OnAttack(); // Saldýrýyý baþlat
-        var currentSkill = combatController.CurrentSkillData;
-        attackTimer = currentSkill != null ? currentSkill.skillDuration : 0.3f;
+        combatController.OnAttack(skillToPerform); // Saldýrýyý baþlat
+        attackTimer = skillToPerform != null ? skillToPerform.skillDuration : 0.3f;
     }
 
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NormalAttack1
   m_EditorClassIdentifier: 
   skillName: BasicAttack1
-  skillId: 1
+  skillIndex: 0
   skillDescription: The most basic attack in game
   effectType: 0
   baseValue: 10

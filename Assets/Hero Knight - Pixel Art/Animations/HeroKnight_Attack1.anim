@@ -95,6 +95,13 @@ AnimationClip:
   - time: 0.071428575
     functionName: ApplyImpulse
     data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 3324ea81c31ec724baf8858139bb438b, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.14285715
+    functionName: ExecuteCurrentSkill
+    data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
@@ -106,8 +113,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.14285715
-    functionName: ExecuteCurrentSkill
+  - time: 0.2857143
+    functionName: OnAttackFinish
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

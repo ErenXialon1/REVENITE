@@ -10,7 +10,7 @@ public class DamageReceiver : MonoBehaviour
         if (statsHandler == null)
         {
             statsHandler = GetComponent<CharacterStatsHandler>();
-            Debug.LogError($"{gameObject.name} does not have a CharacterStatsHandler. Adding One!");
+           // Debug.LogError($"{gameObject.name} does not have a CharacterStatsHandler. Adding One!");
         }
     }
 
@@ -18,11 +18,11 @@ public class DamageReceiver : MonoBehaviour
     {
         if (skill == null || statsHandler == null)
         {
-            Debug.LogWarning("Skill or CharacterStatsHandler is missing.");
+           // Debug.LogWarning("Skill or CharacterStatsHandler is missing.");
             return;
         }
 
         skill.Execute(statsHandler.Stats);
-        Debug.Log(skill.skillData.skillName + "executed");
+       // Debug.Log(skill.skillData.skillName + "executed");
     }
 }

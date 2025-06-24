@@ -7,6 +7,7 @@ public enum InputContext
     Fighting,
     Minigame,
     Cutscene,
+    UI,
 }
 public class PlayerInputReader : MonoBehaviour, IInputReader
 {
@@ -14,8 +15,8 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
     private InputActionMap currentMap;
 
     // Event tanýmlarý
-    public event Action<Vector2> MoveEvent;
-    public event Action AttackEvent;
+    public event Action<Vector2> MovesEvent;
+    public event Action<AttackInput> AttackEvent;
     public event Action AttackCanceledEvent;
     public event Action RollEvent;
     public event Action ParryEvent;
@@ -24,21 +25,27 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
 
 
 
-    private void OnEnable()
+    private void Awake() // Awake kullanmak, OnEnable'dan önce baþlatma garantisi için daha güvenlidir.
     {
         if (inputActions == null)
         {
             inputActions = new InputSystem_Actions();
-
-            SetContext(InputContext.Fighting);
         }
-
+        SetInputContext(InputContext.School);
     }
-    private void OnDisable()
+    private void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SetInputContext(InputContext.Fighting);
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            SetInputContext(InputContext.School);
+        }
     }
-    public void SetContext(InputContext context)
+
+    public void SetInputContext(InputContext context)
     {
         // Disable the current map first
         currentMap?.Disable();
@@ -46,6 +53,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
         switch (context)
         {
             case InputContext.School:
+                
                 currentMap = inputActions.PlayerSchool;
                 break;
             case InputContext.Fighting:
@@ -57,36 +65,48 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
             case InputContext.Cutscene:
                 currentMap = inputActions.PlayerCutscene;
                 break;
+            case InputContext.UI:
+                currentMap = inputActions.UI;
+                break;
         }
 
         currentMap.Enable();
         BindInput(context);
 
     }
-
+    public void GoBackToSchoolContext()
+    {
+        
+        SetInputContext(InputContext.School);
+        
+    }
+    public void GoUIContext()
+    {
+        SetInputContext(InputContext.UI);
+    }
 
 
     public void OnMovePerformed(InputAction.CallbackContext ctx)
     {
         Vector2 input = ctx.ReadValue<Vector2>().normalized;
-        MoveEvent?.Invoke(input);
+        MovesEvent?.Invoke(input);
     }
 
     public void OnMoveCanceled(InputAction.CallbackContext ctx)
     {
-        MoveEvent?.Invoke(Vector2.zero);
+        MovesEvent?.Invoke(Vector2.zero);
     }
 
-    public void OnAttackPerformed(InputAction.CallbackContext context)
+    public void OnLightAttackPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("Attack performed");
+        //Debug.Log("Light Attack performed");
 
-        AttackEvent?.Invoke();
+        AttackEvent?.Invoke(AttackInput.LightAttack);
     }
 
     public void OnAttackCanceled(InputAction.CallbackContext context)
     {
-        Debug.Log("Attack canceled");
+        //Debug.Log("Attack canceled");
         AttackCanceledEvent?.Invoke();
     }
 
@@ -98,30 +118,30 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
 
     public void OnParryPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("Parry performed");
+        //Debug.Log("Parry performed");
         ParryEvent?.Invoke();
     }
 
-    public void OnInteractPerformed(InputAction.CallbackContext context)
+    public void OnInteract(InputAction.CallbackContext context)
     {
         Debug.Log("Interact performed");
         InteractEvent?.Invoke();
     }
 
-    public void OnPreviousPerformed(InputAction.CallbackContext context)
+    public void OnPrevious(InputAction.CallbackContext context)
     {
-        Debug.Log("Previous performed");
+       Debug.Log("Previous performed");
         PreviousEvent?.Invoke();
     }
     public void UnbindAllInput()
     {
-        inputActions.PlayerSchool.Move.performed -= OnMovePerformed;
-        inputActions.PlayerSchool.Move.canceled -= OnMoveCanceled;
-        inputActions.PlayerSchool.Previous.performed -= OnPreviousPerformed;
-        inputActions.PlayerSchool.Interact.performed -= OnInteractPerformed;
-        inputActions.PlayerFighting.Move.performed -= OnMovePerformed;
-        inputActions.PlayerFighting.Move.canceled -= OnMoveCanceled;
-        inputActions.PlayerFighting.Attack.performed -= OnAttackPerformed;
+        inputActions.PlayerSchool.Moves.performed -= OnMovePerformed;
+        inputActions.PlayerSchool.Moves.canceled -= OnMoveCanceled;
+        inputActions.PlayerSchool.Interact.performed -= OnPrevious;
+        inputActions.PlayerSchool.Previous.performed -= OnInteract;
+        inputActions.PlayerFighting.Moves.performed -= OnMovePerformed;
+        inputActions.PlayerFighting.Moves.canceled -= OnMoveCanceled;
+        inputActions.PlayerFighting.Attack.performed -= OnLightAttackPerformed;
         inputActions.PlayerFighting.Attack.canceled -= OnAttackCanceled;
         inputActions.PlayerFighting.DodgeRoll.performed -= OnRollPerformed;
         inputActions.PlayerFighting.Parry.performed -= OnParryPerformed;
@@ -132,16 +152,16 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
         switch (currentMap)
         {
             case InputContext.School:
-                inputActions.PlayerSchool.Move.performed += OnMovePerformed;
-                inputActions.PlayerSchool.Move.canceled += OnMoveCanceled;
-                inputActions.PlayerSchool.Previous.performed += OnPreviousPerformed;
-                inputActions.PlayerSchool.Interact.performed += OnInteractPerformed;
+                inputActions.PlayerSchool.Moves.performed += OnMovePerformed;
+                inputActions.PlayerSchool.Moves.canceled += OnMoveCanceled;
+                inputActions.PlayerSchool.Previous.performed += OnPrevious;
+                inputActions.PlayerSchool.Interact.performed += OnInteract;
                 break;
 
             case InputContext.Fighting:
-                inputActions.PlayerFighting.Move.performed += OnMovePerformed;
-                inputActions.PlayerFighting.Move.canceled += OnMoveCanceled;
-                inputActions.PlayerFighting.Attack.performed += OnAttackPerformed;
+                inputActions.PlayerFighting.Moves.performed += OnMovePerformed;
+                inputActions.PlayerFighting.Moves.canceled += OnMoveCanceled;
+                inputActions.PlayerFighting.Attack.performed += OnLightAttackPerformed;
                 inputActions.PlayerFighting.Attack.canceled += OnAttackCanceled;
                 inputActions.PlayerFighting.DodgeRoll.performed += OnRollPerformed;
                 inputActions.PlayerFighting.Parry.performed += OnParryPerformed;

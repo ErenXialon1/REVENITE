@@ -9,19 +9,23 @@ public class CombatController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private PlayerMovementController playerMovementController;
     [SerializeField] private CharacterSkills characterSkills;
+    [SerializeField] private CharacterCombos characterCombos;
     [Header("Combat Settings")]
     private Vector2 attackDirection = Vector2.zero;
     private Vector2 lastNonZeroDirection = Vector2.right; // varsayılan olarak aşağıya bakar
     [SerializeField] LayerMask damagableLayer;
     private SkillData currentSkillData;// kullanılan yeteneğe bağlı olarak değişmeli
     public SkillData CurrentSkillData => currentSkillData;
+    public ComboData CurrentCombo { get; private set; }
 
     private bool canAttack = true;
-    private bool isAttacking = false;
+    public bool IsAttacking => isAttacking = false;
     private bool isRolling = false;
     private bool isParrying = false;
+    private bool isAttacking;
 
-    
+    public event System.Action AttackFinished;
+
     private void Awake()
     {
         if (animator == null) animator = GetComponent<Animator>();
@@ -29,36 +33,42 @@ public class CombatController : MonoBehaviour
         if (characterSkills == null) characterSkills = GetComponent<CharacterSkills>();
         if (playerMovementController == null) playerMovementController = GetComponent<PlayerMovementController>();
         currentSkillData = characterSkills.AvailableSkills[0];//default olarak normal saldırı
+        if (characterCombos == null) characterCombos = GetComponent<CharacterCombos>(); 
     }
-    public void OnAttack()
+    public void OnAttack(SkillData skillToPerform)
     {
 
         if (!canAttack || isRolling || isParrying) return;
         attackDirection = playerMovementController.inputVector;
-        // Skill seçimi örnek: index 0 → normal saldırı
-        SelectSkill(0);
+        SelectSkill(skillToPerform.skillIndex);
         if (currentSkillData == null)
         {
-            Debug.LogWarning("CombatController: currentSkillData yok.");
+            //Debug.LogWarning("CombatController: currentSkillData yok.");
             return;
         }
         // Animasyonu başlat
-        animator.SetTrigger(currentSkillData.animationTrigger);
-        Debug.Log("CombatController: Attack triggered.");
+        animator.SetTrigger(skillToPerform.animationTrigger);
+        //Debug.Log("CombatController: Attack triggered for combo step " + skillToPerform.skillName);
+
         // Start cooldown
         canAttack = false;
-        Invoke(nameof(ResetAttack), currentSkillData.skillDuration);
     }
-
-    public void SelectSkill(int index)
+    // Bu metod animasyonun sonundaki event'ten çağrılacak:
+    public void OnAttackFinish()
     {
-        if (characterSkills.availableSkills == null || characterSkills.availableSkills.Count <= index)
+        isAttacking = false;
+        ResetAttack();
+        AttackFinished?.Invoke(); // Kombonun bittiğini ComboManager'a haber ver.
+    }
+    public void SelectSkill(int skillIndex)
+    {
+        if (characterSkills.availableSkills == null || characterSkills.availableSkills.Count <= skillIndex)
         {
-            Debug.LogWarning("CombatController: Skill index geçersiz.");
+            //Debug.LogWarning("CombatController: Skill skillIndex geçersiz.");
             return;
         }
 
-        currentSkillData = characterSkills.availableSkills[index];
+        currentSkillData = characterSkills.availableSkills[skillIndex];
     }
     public void ApplyAttack(SkillData skillData)
     {
@@ -67,14 +77,11 @@ public class CombatController : MonoBehaviour
         ApplySkillToTargets(skillData, targets);
         SpawnDebugAreaVisual(GetHitAreaCenter(skillData), skillData.hitArea);
     }
-    public void ApplyImpulse()
-    {
-        if (currentSkillData != null)
-            ApplyImpulse(currentSkillData);
-    }
+   
     private void ApplyImpulse(SkillData skillData)
     {
         rb.AddForce(attackDirection.normalized * skillData.impulseStrength, ForceMode2D.Impulse);
+        
     }
     private Collider2D[] GetHitTargets(SkillData skillData)
     {

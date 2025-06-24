@@ -1,0 +1,2144 @@
+fileFormatVersion: 2
+guid: 0e07854350d705e4dbf75a7a7910693a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8266306002324116836
+    second: Animated keyboard (dark)_0
+  - first:
+      213: -7162699054077676724
+    second: Animated keyboard (dark)_1
+  - first:
+      213: -7136378374286534767
+    second: Animated keyboard (dark)_2
+  - first:
+      213: 6346443502157104708
+    second: Animated keyboard (dark)_3
+  - first:
+      213: -5145054618148919773
+    second: Animated keyboard (dark)_4
+  - first:
+      213: 5290206480766663694
+    second: Animated keyboard (dark)_5
+  - first:
+      213: 4363060159782974495
+    second: Animated keyboard (dark)_6
+  - first:
+      213: -3855115596749205138
+    second: Animated keyboard (dark)_7
+  - first:
+      213: 840124497475226803
+    second: Animated keyboard (dark)_8
+  - first:
+      213: -6854834348769577500
+    second: Animated keyboard (dark)_9
+  - first:
+      213: -2787676062068544004
+    second: Animated keyboard (dark)_10
+  - first:
+      213: -5483228168697186109
+    second: Animated keyboard (dark)_11
+  - first:
+      213: -8176722329521819116
+    second: Animated keyboard (dark)_12
+  - first:
+      213: 8241546974037987262
+    second: Animated keyboard (dark)_13
+  - first:
+      213: -2515369118541913830
+    second: Animated keyboard (dark)_14
+  - first:
+      213: -3236440478982840766
+    second: Animated keyboard (dark)_15
+  - first:
+      213: 3678597346105584551
+    second: Animated keyboard (dark)_16
+  - first:
+      213: -4930185480766629467
+    second: Animated keyboard (dark)_17
+  - first:
+      213: 9146160818707150027
+    second: Animated keyboard (dark)_18
+  - first:
+      213: -3171215876546192346
+    second: Animated keyboard (dark)_19
+  - first:
+      213: 5386277977307407307
+    second: Animated keyboard (dark)_20
+  - first:
+      213: -7153037540869437856
+    second: Animated keyboard (dark)_21
+  - first:
+      213: -854848707901552434
+    second: Animated keyboard (dark)_22
+  - first:
+      213: 5679190733497478934
+    second: Animated keyboard (dark)_23
+  - first:
+      213: 2750431926141510673
+    second: Animated keyboard (dark)_24
+  - first:
+      213: 8800571478193666790
+    second: Animated keyboard (dark)_25
+  - first:
+      213: 5570261553611330471
+    second: Animated keyboard (dark)_26
+  - first:
+      213: -3787029534062550380
+    second: Animated keyboard (dark)_27
+  - first:
+      213: -4189600591786220343
+    second: Animated keyboard (dark)_28
+  - first:
+      213: 2442670837186612670
+    second: Animated keyboard (dark)_29
+  - first:
+      213: 4516020199246221514
+    second: Animated keyboard (dark)_30
+  - first:
+      213: 4026394145432036627
+    second: Animated keyboard (dark)_31
+  - first:
+      213: 8213682684523146233
+    second: Animated keyboard (dark)_32
+  - first:
+      213: -2918580807617406223
+    second: Animated keyboard (dark)_33
+  - first:
+      213: 5467936298045191891
+    second: Animated keyboard (dark)_34
+  - first:
+      213: -699019971359072757
+    second: Animated keyboard (dark)_35
+  - first:
+      213: -5797434432214063616
+    second: Animated keyboard (dark)_36
+  - first:
+      213: -794401288788284315
+    second: Animated keyboard (dark)_37
+  - first:
+      213: 7981183045225537849
+    second: Animated keyboard (dark)_38
+  - first:
+      213: -3293203821253364743
+    second: Animated keyboard (dark)_39
+  - first:
+      213: -7964417301430137991
+    second: Animated keyboard (dark)_40
+  - first:
+      213: 6747164589386811018
+    second: Animated keyboard (dark)_41
+  - first:
+      213: 4363038817145426923
+    second: Animated keyboard (dark)_42
+  - first:
+      213: -2173416581541248668
+    second: Animated keyboard (dark)_43
+  - first:
+      213: -139106231076600440
+    second: Animated keyboard (dark)_44
+  - first:
+      213: 4477371036993600867
+    second: Animated keyboard (dark)_45
+  - first:
+      213: -7114458237523654791
+    second: Animated keyboard (dark)_46
+  - first:
+      213: -636663257063777145
+    second: Animated keyboard (dark)_47
+  - first:
+      213: -5522089650046711214
+    second: Animated keyboard (dark)_48
+  - first:
+      213: -1211226115930496215
+    second: Animated keyboard (dark)_49
+  - first:
+      213: 4504868114508965641
+    second: Animated keyboard (dark)_50
+  - first:
+      213: 443864420422392575
+    second: Animated keyboard (dark)_51
+  - first:
+      213: 7539572557392592214
+    second: Animated keyboard (dark)_52
+  - first:
+      213: -1513984654536606419
+    second: Animated keyboard (dark)_53
+  - first:
+      213: 3018889565977647085
+    second: Animated keyboard (dark)_54
+  - first:
+      213: -2000650806330083019
+    second: Animated keyboard (dark)_55
+  - first:
+      213: -4422210837192409807
+    second: Animated keyboard (dark)_56
+  - first:
+      213: 5936844068503205538
+    second: Animated keyboard (dark)_57
+  - first:
+      213: 360080030389276628
+    second: Animated keyboard (dark)_58
+  - first:
+      213: 8566954045591210756
+    second: Animated keyboard (dark)_59
+  - first:
+      213: 5406614137058079626
+    second: Animated keyboard (dark)_60
+  - first:
+      213: 2467154513711258877
+    second: Animated keyboard (dark)_61
+  - first:
+      213: -3188749723601723252
+    second: Animated keyboard (dark)_62
+  - first:
+      213: 4114982065040005802
+    second: Animated keyboard (dark)_63
+  - first:
+      213: 3247793490260390998
+    second: Animated keyboard (dark)_64
+  - first:
+      213: -3437335431124164836
+    second: Animated keyboard (dark)_65
+  - first:
+      213: -4031200389023034682
+    second: Animated keyboard (dark)_66
+  - first:
+      213: 2534334911171261234
+    second: Animated keyboard (dark)_67
+  - first:
+      213: 7949635346923728408
+    second: Animated keyboard (dark)_68
+  - first:
+      213: 7728884199556369610
+    second: Animated keyboard (dark)_69
+  - first:
+      213: 526934092314633048
+    second: Animated keyboard (dark)_70
+  - first:
+      213: -5904464485142569464
+    second: Animated keyboard (dark)_71
+  - first:
+      213: -6345926737916342580
+    second: Animated keyboard (dark)_72
+  - first:
+      213: -5503082348387739637
+    second: Animated keyboard (dark)_73
+  - first:
+      213: 8848274501283509211
+    second: Animated keyboard (dark)_74
+  - first:
+      213: -1711093938348593982
+    second: Animated keyboard (dark)_75
+  - first:
+      213: -6404214548252073623
+    second: Animated keyboard (dark)_76
+  - first:
+      213: 3691072355573014890
+    second: Animated keyboard (dark)_77
+  - first:
+      213: 2611062808624474077
+    second: Animated keyboard (dark)_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46555392381d7b270800000000000000
+      internalID: 8266306002324116836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_1
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c437ca0f82bf89c90800000000000000
+      internalID: -7162699054077676724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_2
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1971fd1cdad76fc90800000000000000
+      internalID: -7136378374286534767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_3
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44609258db8131850800000000000000
+      internalID: 6346443502157104708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_4
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326204f95181998b0800000000000000
+      internalID: -5145054618148919773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_5
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 3008
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cf09af3c69a6940800000000000000
+      internalID: 5290206480766663694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14f58d4914bc8c30800000000000000
+      internalID: 4363060159782974495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_7
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6112bf3ac0ef7ac0800000000000000
+      internalID: -3855115596749205138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc4d1f77c8b8ab00800000000000000
+      internalID: 840124497475226803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_9
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5717f6a7cbed0a0800000000000000
+      internalID: -6854834348769577500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_10
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd6b8b246f2059d0800000000000000
+      internalID: -2787676062068544004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_11
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2778
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8736e2809a7e3b0800000000000000
+      internalID: -5483228168697186109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412f8d90d52768e80800000000000000
+      internalID: -8176722329521819116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_13
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfca3bae4bdf5270800000000000000
+      internalID: 8241546974037987262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_14
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11625a1d1d971dd0800000000000000
+      internalID: -2515369118541913830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e5881288ad513d0800000000000000
+      internalID: -3236440478982840766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_16
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab6156dbc00d0330800000000000000
+      internalID: 3678597346105584551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_17
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2548
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9dd1e2d66749bb0800000000000000
+      internalID: -4930185480766629467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4b2a16ec0bdee70800000000000000
+      internalID: 9146160818707150027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_19
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c926c46f39df3d0800000000000000
+      internalID: -3171215876546192346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_20
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3eaea5847efba40800000000000000
+      internalID: 5386277977307407307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_21
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0668177414e4bbc90800000000000000
+      internalID: -7153037540869437856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_22
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec883dc11a7f224f0800000000000000
+      internalID: -854848707901552434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_23
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2318
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61faec9e1e980de40800000000000000
+      internalID: 5679190733497478934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_24
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114ee80b34f7b2620800000000000000
+      internalID: 2750431926141510673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_25
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eafa2ac129e12a70800000000000000
+      internalID: 8800571478193666790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_26
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3d409de5b8d4d40800000000000000
+      internalID: 5570261553611330471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_27
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492e94c04b4c17bc0800000000000000
+      internalID: -3787029534062550380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_28
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4e0df857c8bd5c0800000000000000
+      internalID: -4189600591786220343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_29
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2088
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdc6b14f2c16e120800000000000000
+      internalID: 2442670837186612670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac05f8eb1702cae30800000000000000
+      internalID: 4516020199246221514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_31
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315603c7420a0e730800000000000000
+      internalID: 4026394145432036627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_32
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb67c432ecdcf170800000000000000
+      internalID: 8213682684523146233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_33
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa11b1083e1f77d0800000000000000
+      internalID: -2918580807617406223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_34
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6b27bb71302eb40800000000000000
+      internalID: 5467936298045191891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_35
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1858
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e1d342a059c46f0800000000000000
+      internalID: -699019971359072757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006234b99106b8fa0800000000000000
+      internalID: -5797434432214063616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_37
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c69ac9c38b9f4f0800000000000000
+      internalID: -794401288788284315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_38
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931e90a81bbd2ce60800000000000000
+      internalID: 7981183045225537849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_39
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3fb3d92903c42d0800000000000000
+      internalID: -3293203821253364743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_40
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b084169a4b87190800000000000000
+      internalID: -7964417301430137991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_41
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1628
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86ce7f227eb2ad50800000000000000
+      internalID: 6747164589386811018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_42
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3913510b0ac8c30800000000000000
+      internalID: 4363038817145426923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_43
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4614a44622976d1e0800000000000000
+      internalID: -2173416581541248668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_44
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885c2aeae9bc11ef0800000000000000
+      internalID: -139106231076600440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_45
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d30ab6c31d22e30800000000000000
+      internalID: 4477371036993600867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_46
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9770d0f4ded544d90800000000000000
+      internalID: -7114458237523654791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_47
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1398
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c9b21142e1a27f0800000000000000
+      internalID: -636663257063777145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aca1778b89d53b0800000000000000
+      internalID: -5522089650046711214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_49
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9236941d34cd03fe0800000000000000
+      internalID: -1211226115930496215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_50
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9076a4daea1848e30800000000000000
+      internalID: 4504868114508965641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_51
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa16b3b65ce82600800000000000000
+      internalID: 443864420422392575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_52
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d3ba96b41f1a860800000000000000
+      internalID: 7539572557392592214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_53
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1168
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2df3f66afe3dfae0800000000000000
+      internalID: -1513984654536606419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_54
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de71b34c01045e920800000000000000
+      internalID: 3018889565977647085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_55
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539b81901b24c34e0800000000000000
+      internalID: -2000650806330083019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_56
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d73476ca621a2c0800000000000000
+      internalID: -4422210837192409807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_57
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6b40eb938e36250800000000000000
+      internalID: 5936844068503205538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_58
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df801e31e24ff400800000000000000
+      internalID: 360080030389276628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_59
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 938
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b4f86905fe3e670800000000000000
+      internalID: 8566954045591210756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_60
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83b3f489e6280b40800000000000000
+      internalID: 5406614137058079626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_61
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcd2cb65f71d3220800000000000000
+      internalID: 2467154513711258877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_62
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80281765094fb3d0800000000000000
+      internalID: -3188749723601723252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_63
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa10d3d26a5b1930800000000000000
+      internalID: 4114982065040005802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_64
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654fbcac8fa721d20800000000000000
+      internalID: 3247793490260390998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_65
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 708
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fdafd13a12c40d0800000000000000
+      internalID: -3437335431124164836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_66
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c29dd9ba9c4e08c0800000000000000
+      internalID: -4031200389023034682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_67
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233fb3a9c24cb2320800000000000000
+      internalID: 2534334911171261234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_68
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e2743aa37c25e60800000000000000
+      internalID: 7949635346923728408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_69
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acccfa8ea33824b60800000000000000
+      internalID: 7728884199556369610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_70
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853e470e3cb005700800000000000000
+      internalID: 526934092314633048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_71
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 478
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80eda2e75d02f0ea0800000000000000
+      internalID: -5904464485142569464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_72
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccec7d7014dbee7a0800000000000000
+      internalID: -6345926737916342580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_73
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0850aeb2cf11a3b0800000000000000
+      internalID: -5503082348387739637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_74
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3762c57c26bca70800000000000000
+      internalID: 8848274501283509211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_75
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc686bf029f048e0800000000000000
+      internalID: -1711093938348593982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_76
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961eb02acc8af17a0800000000000000
+      internalID: -6404214548252073623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_77
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 248
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61a13250c2593330800000000000000
+      internalID: 3691072355573014890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animated keyboard (dark)_78
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 18
+        width: 490
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7ab4a5acb5c3420800000000000000
+      internalID: 2611062808624474077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
