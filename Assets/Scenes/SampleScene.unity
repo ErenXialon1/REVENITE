@@ -2575,6 +2575,7 @@ RectTransform:
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1806952709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2608,8 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!224 &1826594034 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8023019604311603306, guid: eb857a8162bb94b47910540bd43a4ed6, type: 3}
@@ -2623,6 +2626,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1897890631
 GameObject:
