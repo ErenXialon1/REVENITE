@@ -1,2 +1,37 @@
-# Auto detect text files and perform LF normalization
+# Unity ve metin dosyaları için satır sonlarını otomatik olarak yönet.
+# Bu, Windows (CRLF) ve Linux/Mac (LF) arasındaki farkları ortadan kaldırır.
 * text=auto
+
+# Metin olarak kabul edilmesi gereken dosyaları net bir şekilde belirt.
+*.cs text
+*.shader text
+*.txt text
+*.md text
+*.asmdef text
+*.json text
+*.xml text
+
+# Unity'nin binary (ikili) dosyalarına dokunma, onları olduğu gibi bırak.
+# Bu, Git'in bu dosyaları birleştirmeye çalışmasını veya satır sonlarını değiştirmesini engeller.
+*.unity binary
+*.asset binary
+*.meta binary
+*.prefab binary
+*.mat binary
+*.anim binary
+*.controller binary
+*.preset binary
+*.physicmaterial binary
+*.physicsmaterial2d binary
+
+# Resim ve ses dosyaları gibi diğer binary formatlar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tga binary
+*.psd binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
