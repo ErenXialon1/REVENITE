@@ -186,7 +186,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Analog spin (right)_0: -1161989938934696411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

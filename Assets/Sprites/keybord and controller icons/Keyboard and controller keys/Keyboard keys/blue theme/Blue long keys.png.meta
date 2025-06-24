@@ -411,7 +411,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue long keys_0: 4730102842304712693
+      Blue long keys_1: -994444772061753788
+      Blue long keys_2: -5347362185130860378
+      Blue long keys_3: 1397007762830553228
+      Blue long keys_4: 1518981974193755362
+      Blue long keys_5: 4040336807768597984
+      Blue long keys_6: -7240135397578382924
+      Blue long keys_7: 9066160206241812279
+      Blue long keys_8: 2363506131036548632
+      Blue long keys_9: -8697536826255317010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

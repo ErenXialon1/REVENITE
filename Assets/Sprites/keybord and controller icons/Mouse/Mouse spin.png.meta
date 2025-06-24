@@ -361,7 +361,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mouse spin_0: -5683561094845771942
+      Mouse spin_1: 2392262522219996059
+      Mouse spin_2: -8638221687480691197
+      Mouse spin_3: -1290620486379159375
+      Mouse spin_4: 1817514270639916036
+      Mouse spin_5: -5801170407403533964
+      Mouse spin_6: 6093141609485871936
+      Mouse spin_7: -8285940804661717715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

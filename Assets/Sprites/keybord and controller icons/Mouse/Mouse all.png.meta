@@ -736,7 +736,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mouse all_0: 7486559802296872152
+      Mouse all_1: 2758398632456139450
+      Mouse all_10: 3985446863202972754
+      Mouse all_11: 8260205454117337979
+      Mouse all_12: 6887732238429230922
+      Mouse all_13: 9056999931340836102
+      Mouse all_14: -8619094554886602271
+      Mouse all_15: 3849536690844768793
+      Mouse all_16: 4243841093611753054
+      Mouse all_17: -4404216396442322785
+      Mouse all_18: -7216805767611089510
+      Mouse all_19: 2130823427975748340
+      Mouse all_2: 8999924937918492033
+      Mouse all_20: 7709207819430621539
+      Mouse all_21: -2912055597761729268
+      Mouse all_22: 8644673071342395836
+      Mouse all_3: -4222479799480329746
+      Mouse all_4: -4445545504189209256
+      Mouse all_5: -3595969624646146076
+      Mouse all_6: -4517857892727002921
+      Mouse all_7: 7275079741583714367
+      Mouse all_8: -6390186907001760460
+      Mouse all_9: -8205852219593638357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
