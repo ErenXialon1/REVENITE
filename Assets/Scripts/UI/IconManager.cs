@@ -3,12 +3,14 @@ using UnityEngine.UI;
 using PixelCrushers.DialogueSystem;
 public class IconManager : MonoBehaviour
 {
+    public Image interactionIconPrefab;
     public Image interactionIcon;
     public Vector3 offset = new Vector3(0, 2f, 0);
     private Transform currentTarget;
 
     void Start()
     {
+        interactionIcon = interactionIconPrefab;
         if (interactionIcon != null) interactionIcon.enabled = false;
     }
 
