@@ -35,7 +35,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.B))
         {
             SetInputContext(InputContext.Fighting);
         }
@@ -99,7 +99,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
 
     public void OnLightAttackPerformed(InputAction.CallbackContext context)
     {
-        //Debug.Log("Light Attack performed");
+        Debug.Log("Light Attack performed");
 
         AttackEvent?.Invoke(AttackInput.LightAttack);
     }

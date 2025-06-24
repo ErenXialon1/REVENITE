@@ -43,12 +43,12 @@ public class CombatController : MonoBehaviour
         SelectSkill(skillToPerform.skillIndex);
         if (currentSkillData == null)
         {
-            //Debug.LogWarning("CombatController: currentSkillData yok.");
+            Debug.LogWarning("CombatController: currentSkillData yok.");
             return;
         }
         // Animasyonu başlat
         animator.SetTrigger(skillToPerform.animationTrigger);
-        //Debug.Log("CombatController: Attack triggered for combo step " + skillToPerform.skillName);
+        Debug.Log("CombatController: Attack triggered for combo step " + skillToPerform.skillName);
 
         // Start cooldown
         canAttack = false;
