@@ -361,7 +361,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Analog spin_0: 9010406114594277354
+      Analog spin_1: -8311811638533487085
+      Analog spin_2: -8994567378411260806
+      Analog spin_3: -7764454076614913753
+      Analog spin_4: 2071793777742710079
+      Analog spin_5: -3434983586789150301
+      Analog spin_6: -3932733207268707707
+      Analog spin_7: -2330300109221487659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -79,6 +79,7 @@ public class SocialLinkFeedbackManager : MonoBehaviour
             {
                 return icon;
             }
+
         }
 
         // Havuzda uygun ikon yoksa, yenisini oluþtur.

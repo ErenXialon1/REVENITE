@@ -686,7 +686,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Analog move_0: 7829149135741517285
+      Analog move_1: 4657985742432310739
+      Analog move_10: 8153071620040005855
+      Analog move_11: -3853609983707093315
+      Analog move_12: 529877827583390184
+      Analog move_13: -536178911065215714
+      Analog move_14: -7226338002004122238
+      Analog move_15: -4952271424567327718
+      Analog move_16: -1518513212652466045
+      Analog move_17: 8040301618315309008
+      Analog move_18: 8665408090274965427
+      Analog move_19: -6952040261862911434
+      Analog move_2: -4628418006424556944
+      Analog move_20: -2470070966286006291
+      Analog move_3: -4765346195971226839
+      Analog move_4: 6306893404271830385
+      Analog move_5: -7381588968817023718
+      Analog move_6: 2423694180846196873
+      Analog move_7: -3825786459615676442
+      Analog move_8: 1941813673288658081
+      Analog move_9: -1471191677216675144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
