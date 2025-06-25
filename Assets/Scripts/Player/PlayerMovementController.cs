@@ -24,7 +24,13 @@ public class PlayerMovementController : MonoBehaviour
     [Header("Component References")]
     [Tooltip("Reference to the Rigidbody2D component.")]
     [SerializeField] private Rigidbody2D rb;
-
+    [SerializeField] private Animator animator; //  Animator referansı
+    [SerializeField] private SpriteRenderer spriteRenderer; // Sağa/sola çevirmek için
+    [Header("Animation Smoothing")]
+    [Tooltip("Input kesildiğinde Idle'a geçmeden önceki saniye cinsinden bekleme süresi.")]
+    [SerializeField] private float idleTransitionDelay = 0.1f;
+    private float timeSinceNoInput = 0f;
+    private float updateTick = 0.05f;
     // ====================================
     // 5. Input & State Variables
     // ====================================
@@ -37,12 +43,11 @@ public class PlayerMovementController : MonoBehaviour
     private void Awake()
     {
         // Ensure that the Rigidbody2D component is assigned.
-        if (rb == null)
-        {
-            rb = GetComponent<Rigidbody2D>();
-        }
-
-        inputReader = inputReaderRef as IInputReader;
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (animator == null) animator = GetComponent<Animator>();
+        if (spriteRenderer==null) spriteRenderer = GetComponent<SpriteRenderer>(); // Genellikle karakterin sprite'ı bir alt nesnede olur.
+    
+    inputReader = inputReaderRef as IInputReader;
 
     }
     private void OnEnable()
@@ -115,6 +120,46 @@ public class PlayerMovementController : MonoBehaviour
 
         // Ensure the character's horizontal speed does not exceed maxSpeed.
         CapHorizontalSpeed();
+        UpdateAnimation();
+    }
+    private void UpdateAnimation()
+    {
+        // Oyuncunun bir tuşa basıp basmadığını kontrol et.
+        bool isMoving = inputVector.sqrMagnitude > 0.01f;
+       
+
+        // Eğer hareket ediyorsak (hızımız çok küçük değilse)
+        if (isMoving)
+        {
+            timeSinceNoInput = 0f;
+            animator.SetFloat("Speed", 1f);
+            // Hareket yönünü Animator'a gönder.
+            animator.SetFloat("LastMoveX", inputVector.normalized.x);
+            animator.SetFloat("LastMoveY", inputVector.normalized.y);
+
+            // --- YATAY HAREKET İÇİN SPRITE'I ÇEVİRME ---
+            if (inputVector.x > 0.01f && spriteRenderer.flipX== true)
+            {
+                spriteRenderer.flipX = false; // Sağa gidiyorsa normal
+            }
+            else if (inputVector.x < -0.01f && spriteRenderer.flipX == false)
+            {
+                spriteRenderer.flipX = true; // Sola gidiyorsa X ekseninde çevir
+            }
+        }
+        else // Eğer duruyorsak
+        {
+            
+            timeSinceNoInput += updateTick;
+            // Zamanlayıcı, bizim belirlediğimiz küçük gecikme süresini geçtiyse,
+            // bu demektir ki oyuncu gerçekten durdu.
+            if (timeSinceNoInput >= idleTransitionDelay)
+            {
+                // Animator'a "durdu" bilgisini gönder.
+                animator.SetFloat("Speed", 0f);
+            }
+            
+        }
     }
     // CalculateMovementForce() returns the force needed based on whether there is active input.
     private Vector2 CalculateMovementForce(float speedDiffX, float speedDiffY, float currentAcceleration, float currentDeceleration)
@@ -154,7 +199,7 @@ public class PlayerMovementController : MonoBehaviour
 
 
             HandleMovement();
-            yield return new WaitForSeconds(0.05f);//sorun çıkarsa fixedupdate olarak değişebilir
+            yield return new WaitForSeconds(updateTick);//sorun çıkarsa fixedupdate olarak değişebilir
         }
     }
     public void StopCanMove()

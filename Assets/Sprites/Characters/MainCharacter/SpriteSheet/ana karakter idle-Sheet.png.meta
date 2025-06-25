@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: a285826ae215e5840ada6a9b2cd78b28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5525701961772381240
+    second: ana karakter idle-Sheet_0
+  - first:
+      213: -403955595999650781
+    second: ana karakter idle-Sheet_1
+  - first:
+      213: -242209614881787653
+    second: ana karakter idle-Sheet_2
+  - first:
+      213: -2183850115017107808
+    second: ana karakter idle-Sheet_3
+  - first:
+      213: -82343518408831398
+    second: ana karakter idle-Sheet_4
+  - first:
+      213: -7799893700179421954
+    second: ana karakter idle-Sheet_5
+  - first:
+      213: 3447057858681451284
+    second: ana karakter idle-Sheet_6
+  - first:
+      213: 1744570934080067960
+    second: ana karakter idle-Sheet_7
+  - first:
+      213: -1500546065038686718
+    second: ana karakter idle-Sheet_8
+  - first:
+      213: -5910710733234598002
+    second: ana karakter idle-Sheet_9
+  - first:
+      213: -7304387463218502234
+    second: ana karakter idle-Sheet_10
+  - first:
+      213: 9042375289118324547
+    second: ana karakter idle-Sheet_11
+  - first:
+      213: -1156798499393437592
+    second: ana karakter idle-Sheet_12
+  - first:
+      213: -2719135887809256094
+    second: ana karakter idle-Sheet_13
+  - first:
+      213: 5564504341538961308
+    second: ana karakter idle-Sheet_14
+  - first:
+      213: 8635525151602317127
+    second: ana karakter idle-Sheet_15
+  - first:
+      213: 1153972682299941339
+    second: ana karakter idle-Sheet_16
+  - first:
+      213: 7953291858343951546
+    second: ana karakter idle-Sheet_17
+  - first:
+      213: -7827935500217523684
+    second: ana karakter idle-Sheet_18
+  - first:
+      213: 181756168072931995
+    second: ana karakter idle-Sheet_19
+  - first:
+      213: -949072759710046001
+    second: ana karakter idle-Sheet_20
+  - first:
+      213: -1714707477369781378
+    second: ana karakter idle-Sheet_21
+  - first:
+      213: -6994920596700159057
+    second: ana karakter idle-Sheet_22
+  - first:
+      213: -9177864974596694063
+    second: ana karakter idle-Sheet_23
+  - first:
+      213: 5906394161697257653
+    second: ana karakter idle-Sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 407
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbc0e99753c053b0800000000000000
+      internalID: -5525701961772381240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 407
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cd863968cd46af0800000000000000
+      internalID: -403955595999650781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 407
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf079c773af73acf0800000000000000
+      internalID: -242209614881787653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 407
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a695b314e761b1e0800000000000000
+      internalID: -2183850115017107808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 407
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e8fab91057bdef0800000000000000
+      internalID: -82343518408831398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 310
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef49ffa510631c390800000000000000
+      internalID: -7799893700179421954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 310
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4133de2fbd866df20800000000000000
+      internalID: 3447057858681451284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 310
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879505b7506f53810800000000000000
+      internalID: 1744570934080067960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 310
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2064248dd4dfc2be0800000000000000
+      internalID: -1500546065038686718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 310
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f867787efe8fda0800000000000000
+      internalID: -5910710733234598002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 214
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a56b017d4a91aa90800000000000000
+      internalID: -7304387463218502234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 214
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347faa9ba68fc7d70800000000000000
+      internalID: 9042375289118324547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 214
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86003fec4e932ffe0800000000000000
+      internalID: -1156798499393437592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 215
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265ec1f0150b34ad0800000000000000
+      internalID: -2719135887809256094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 215
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c977c847737193d40800000000000000
+      internalID: 5564504341538961308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 119
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74715365f5c87d770800000000000000
+      internalID: 8635525151602317127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 119
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd12ef06a0cb30010800000000000000
+      internalID: 1153972682299941339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 118
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcf89b8ec4cf5e60800000000000000
+      internalID: 7953291858343951546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 118
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c126dd003269d5390800000000000000
+      internalID: -7827935500217523684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 118
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a29b9954ab58200800000000000000
+      internalID: 181756168072931995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 22
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8ab7b7a5734d2f0800000000000000
+      internalID: -949072759710046001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 22
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e730bad52a22438e0800000000000000
+      internalID: -1714707477369781378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 22
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3af9927cc0dee90800000000000000
+      internalID: -6994920596700159057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 22
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df1aa89e6ca1a080800000000000000
+      internalID: -9177864974596694063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ana karakter idle-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 22
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8f767523ab7f150800000000000000
+      internalID: 5906394161697257653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ana karakter idle-Sheet_0: -5525701961772381240
+      ana karakter idle-Sheet_1: -403955595999650781
+      ana karakter idle-Sheet_10: -7304387463218502234
+      ana karakter idle-Sheet_11: 9042375289118324547
+      ana karakter idle-Sheet_12: -1156798499393437592
+      ana karakter idle-Sheet_13: -2719135887809256094
+      ana karakter idle-Sheet_14: 5564504341538961308
+      ana karakter idle-Sheet_15: 8635525151602317127
+      ana karakter idle-Sheet_16: 1153972682299941339
+      ana karakter idle-Sheet_17: 7953291858343951546
+      ana karakter idle-Sheet_18: -7827935500217523684
+      ana karakter idle-Sheet_19: 181756168072931995
+      ana karakter idle-Sheet_2: -242209614881787653
+      ana karakter idle-Sheet_20: -949072759710046001
+      ana karakter idle-Sheet_21: -1714707477369781378
+      ana karakter idle-Sheet_22: -6994920596700159057
+      ana karakter idle-Sheet_23: -9177864974596694063
+      ana karakter idle-Sheet_24: 5906394161697257653
+      ana karakter idle-Sheet_3: -2183850115017107808
+      ana karakter idle-Sheet_4: -82343518408831398
+      ana karakter idle-Sheet_5: -7799893700179421954
+      ana karakter idle-Sheet_6: 3447057858681451284
+      ana karakter idle-Sheet_7: 1744570934080067960
+      ana karakter idle-Sheet_8: -1500546065038686718
+      ana karakter idle-Sheet_9: -5910710733234598002
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
