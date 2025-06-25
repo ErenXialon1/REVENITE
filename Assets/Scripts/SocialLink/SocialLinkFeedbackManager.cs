@@ -47,6 +47,9 @@ public class SocialLinkFeedbackManager : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Image icon = GetIconFromPool();
+            Color iconColor = icon.color;
+            iconColor.a = 1f;
+            icon.color = iconColor;
             icon.gameObject.SetActive(true);
             icon.transform.position = spawnPoint.position;
             icon.transform.localScale = Vector3.zero; // Baþlangýçta görünmez olsun

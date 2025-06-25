@@ -4,6 +4,7 @@ using PixelCrushers.DialogueSystem;
 public class SocialLinkNpc : MonoBehaviour
 {
     public SocialLinkManager socialLinkManager;
+    [Tooltip("Core_DB'deki Actor'un tam adý.")]
     public string characterNameID;
     private void Start()
     {
@@ -14,17 +15,7 @@ public class SocialLinkNpc : MonoBehaviour
     {
         if (DialogueManager.IsConversationActive) return;
 
-        // Karakterle tanýþýlýp tanýþýlmadýðýný kontrol et.
-        if (DialogueLua.GetActorField(characterNameID, "IsMet").AsBool == true)
-        {
-            socialLinkManager.StandardConversationStart(characterNameID, socialLinkManager.GetCharSocialLinkRank(characterNameID));
-            Debug.Log("1");
-        }
-        else
-        {
-            // Hayýr, tanýþýlmadý: Tanýþma diyaloðunu baþlat.
-            socialLinkManager.MeetingConversationStart(characterNameID);
-            Debug.Log("2");
-        }
+        // Artýk if/else yok. Sadece Manager'daki karar mekanizmasýný çaðýrýyoruz.
+        SocialLinkManager.Instance.DecideAndStartConversation(characterNameID);
     }
 }

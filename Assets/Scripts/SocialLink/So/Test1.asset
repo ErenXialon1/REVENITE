@@ -13,9 +13,4 @@ MonoBehaviour:
   m_Name: Test1
   m_EditorClassIdentifier: 
   characterName: Selimax
-  characterPortrait: {fileID: 0}
-  currentRank: 0
-  currentPoints: 0
-  rankUpPointsNeeded: 64000000f4010000e8030000d0070000
-  standardDialogue: 
-  rankUpDialogue: 
+  rankUpPointsNeeded: 2c010000bc020000e8030000d0070000
