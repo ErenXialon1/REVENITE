@@ -1,7 +1,7 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem; // Proximity Selector için gerekli
 
-[RequireComponent(typeof(ProximitySelector), typeof(IInputReader))]
+[RequireComponent(typeof(ProximitySelector))]
 public class InputToDialogueBridge : MonoBehaviour
 {
     private IInputReader inputReader;
@@ -10,7 +10,7 @@ public class InputToDialogueBridge : MonoBehaviour
     private void Awake()
     {
         // Gerekli component'leri bu GameObject üzerinden al.
-        inputReader = GetComponent<IInputReader>();
+        inputReader = GetComponentInParent<IInputReader>();
         proximitySelector = GetComponent<ProximitySelector>();
     }
 
