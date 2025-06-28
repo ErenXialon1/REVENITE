@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CombatController : MonoBehaviour
@@ -10,6 +11,9 @@ public class CombatController : MonoBehaviour
     [SerializeField] private PlayerMovementController playerMovementController;
     [SerializeField] private CharacterSkills characterSkills;
     [SerializeField] private CharacterCombos characterCombos;
+    [SerializeField] private DamageReceiver damageReceiver;
+    [SerializeField] private IInputReader inputReader;
+    
     [Header("Combat Settings")]
     private Vector2 attackDirection = Vector2.zero;
     private Vector2 lastNonZeroDirection = Vector2.right; // varsayılan olarak aşağıya bakar
@@ -18,14 +22,29 @@ public class CombatController : MonoBehaviour
     public SkillData CurrentSkillData => currentSkillData;
     public ComboData CurrentCombo { get; private set; }
 
-    private bool canAttack = true;
+    public bool canAttack = true;
     public bool IsAttacking => isAttacking = false;
-    private bool isRolling = false;
+    
     private bool isParrying = false;
+    public bool canParry;
     private bool isAttacking;
 
     public event System.Action AttackFinished;
-
+    [Header("Dodge Roll Settings")]
+    [SerializeField] private float rollDistance = 5f; // Dodge mesafesi
+    [SerializeField] private float rollDuration = 0.5f; // Dodge süresi
+    public float RollDuration => rollDuration;
+    [SerializeField] private float rollCooldown = 0.5f; // Cooldown süresi
+    public bool isRolling = false;
+    public bool IsRolling => isRolling = false;
+    public bool canRoll = true;
+    [Header("Dodge Roll - Animation Curve")]
+    [SerializeField]
+    private AnimationCurve rollSpeedCurve = new AnimationCurve(
+    new Keyframe(0f, 0f),
+    new Keyframe(0.5f, 1f),
+    new Keyframe(1f, 0f)
+);
     private void Awake()
     {
         if (animator == null) animator = GetComponent<Animator>();
@@ -34,7 +53,9 @@ public class CombatController : MonoBehaviour
         if (playerMovementController == null) playerMovementController = GetComponent<PlayerMovementController>();
         currentSkillData = characterSkills.AvailableSkills[0];//default olarak normal saldırı
         if (characterCombos == null) characterCombos = GetComponent<CharacterCombos>(); 
+        if (damageReceiver == null) damageReceiver = GetComponent<DamageReceiver>();
     }
+    
     public void OnAttack(SkillData skillToPerform)
     {
 
@@ -126,6 +147,7 @@ public class CombatController : MonoBehaviour
             Debug.LogWarning("No skill data set for this attack.");
         }
     }
+  
     private Vector2 GetHitAreaCenter(SkillData skillData)
     {
         Vector2 usedDirection = attackDirection.normalized != Vector2.zero
@@ -154,17 +176,62 @@ public class CombatController : MonoBehaviour
     }
     public void OnRoll()
     {
-        if (isRolling || isParrying || isAttacking) return;
-
+        if (!canRoll || isRolling || isParrying || isAttacking) return;
+        Debug.Log("save1");
         isRolling = true;
+        canRoll = false;
         animator.SetTrigger("Roll");
-
+        // Dodge yönü: Son hareket yönü veya sağa (default)
+        Vector2 rollDirection = playerMovementController.LastMoveDirection.normalized;
+        if (rollDirection == Vector2.zero) rollDirection = Vector2.right;
+        // Hareket uygula (lerp ile smooth hareket için)
+        
+        StartCoroutine(PerformRollMovement(rollDirection));
         // Burada dodge yönü ve momentum eklenebilir
-        Invoke(nameof(EndRoll), 0.5f); // örnek süre
     }
-    private void EndRoll()
+    private IEnumerator PerformRollMovement(Vector2 direction)
+    {
+        float elapsed = 0f;
+        Vector2 rollVelocity = direction.normalized * (rollDistance / rollDuration);
+
+        while (elapsed < rollDuration) // isRolling flag'i ile kesmeye açık
+        {
+           /* if (IsRollInterrupted()) // Hasar aldı mı? Başka bir state'e mi geçti? TODO
+            {
+                rb.linearVelocity = Vector2.zero;
+                yield break; // Korutini sonlandır
+            }*/
+
+            rb.linearVelocity = rollVelocity * rollSpeedCurve.Evaluate(elapsed / rollDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        //rb.linearVelocity = Vector2.zero;// resetVelocity var
+        Debug.Log("save2");
+        isRolling = false; //bu "animasyonlar eklendiğinde" sonradan kaldırılacak "onRollFinish"
+        canRoll = true;//bu "animasyonlar eklendiğinde"sonradan kaldırılacak "resetRoll"
+    }
+    public void ExecuteRoll()
+    {
+
+    }
+    public void ExecuteRollInvincibility()
+    {
+        damageReceiver.IsInvincible = true;
+    }
+    public void DisableRollInvincibility()
+    {
+        damageReceiver.IsInvincible = false;
+    }
+    public void OnRollFinish()
     {
         isRolling = false;
+        Invoke(nameof(ResetRoll), rollCooldown);
+    }
+    private void ResetRoll()
+    {
+        canRoll = true;
     }
     public void OnParry()
     {

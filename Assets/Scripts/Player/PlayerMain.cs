@@ -23,7 +23,10 @@ public class PlayerMain : MonoBehaviour
 
    
 
-   
+   public void StartRoll()
+    {
+        stateMachine.ChangeState(new PlayerRollState(stateMachine, movementController, combatController));
+    }
     public void StartAttack(ComboData combo, int step)
     {
         // ComboManager'dan gelen bilgiyle doðru SkillData'yý al

@@ -103,7 +103,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (!canMove)
         {
-            
+            return;
         }
         // Calculate the desired target speed based on input.
         float targetSpeedX = inputVector.x * maxSpeed;

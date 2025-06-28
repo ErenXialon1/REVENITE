@@ -3,7 +3,7 @@ using UnityEngine;
 public class DamageReceiver : MonoBehaviour
 {
     [SerializeField]private CharacterStatsHandler statsHandler;
-
+    public bool IsInvincible { get; set; }
     private void Awake()
     {
         statsHandler = GetComponent<CharacterStatsHandler>();
@@ -16,6 +16,7 @@ public class DamageReceiver : MonoBehaviour
 
     public void ReceiveDamage(Skill skill)
     {
+        if (IsInvincible) return;
         if (skill == null || statsHandler == null)
         {
            // Debug.LogWarning("Skill or CharacterStatsHandler is missing.");

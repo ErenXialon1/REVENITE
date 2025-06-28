@@ -1,7 +1,8 @@
+
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComboManager : MonoBehaviour
+public class CombatManager : MonoBehaviour
 {
     #region Inner Class: ComboTrieNode
     /// <summary>
@@ -81,6 +82,7 @@ public class ComboManager : MonoBehaviour
         {
             // Input event'ine abone ol
             inputReader.AttackEvent += OnAttackPressed;
+            inputReader.RollEvent += OnRollPressed;
         }
         if (combatController != null)
         {
@@ -94,6 +96,7 @@ public class ComboManager : MonoBehaviour
         if (inputReader != null)
         {
             inputReader.AttackEvent -= OnAttackPressed;
+            inputReader.RollEvent -= OnRollPressed;
         }
         if (combatController != null)
         {
@@ -235,4 +238,8 @@ public class ComboManager : MonoBehaviour
     }
     #endregion
 
+    public void OnRollPressed()
+    {
+        playerMain.StartRoll();
+    }
 }

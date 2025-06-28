@@ -138,9 +138,10 @@ GameObject:
   - component: {fileID: 2268301830597312442}
   - component: {fileID: 2104768268239761005}
   - component: {fileID: 7512808010162248329}
-  - component: {fileID: 1690878329207923428}
   - component: {fileID: 4917038883324109964}
-  m_Layer: 8
+  - component: {fileID: 7320934262373184423}
+  - component: {fileID: 4054917184253976744}
+  m_Layer: 10
   m_Name: Combat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,9 +217,49 @@ MonoBehaviour:
   playerMovementController: {fileID: 9084082102509117454}
   characterSkills: {fileID: 4917038883324109964}
   characterCombos: {fileID: 7512808010162248329}
+  damageReceiver: {fileID: 4054917184253976744}
   damagableLayer:
     serializedVersion: 2
     m_Bits: 512
+  canAttack: 1
+  canParry: 0
+  rollDistance: 5
+  rollDuration: 0.5
+  rollCooldown: 0.5
+  canRoll: 1
+  rollSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &7512808010162248329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,24 +274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   availableCombos:
   - {fileID: 11400000, guid: 7d6f882476e29c14fb826a0613cb1740, type: 2}
---- !u!114 &1690878329207923428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545521814920935221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf14506eaffc7a4faaeec7129087025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputReaderRef: {fileID: 8042562619362344961}
-  characterCombos: {fileID: 7512808010162248329}
-  combatController: {fileID: 2104768268239761005}
-  stateMachine: {fileID: 2827397041742225432}
-  playerMain: {fileID: 779040973601547584}
-  comboWindow: 1.5
 --- !u!114 &4917038883324109964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +289,37 @@ MonoBehaviour:
   availableSkills:
   - {fileID: 11400000, guid: 3324ea81c31ec724baf8858139bb438b, type: 2}
   - {fileID: 11400000, guid: ef40cf023860a154c9c19de2a9959e20, type: 2}
+--- !u!114 &7320934262373184423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545521814920935221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14f7fd4a17ad644a88427f70ad3d510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputReaderRef: {fileID: 9084082102509117454}
+  characterCombos: {fileID: 7512808010162248329}
+  combatController: {fileID: 2104768268239761005}
+  stateMachine: {fileID: 2827397041742225432}
+  playerMain: {fileID: 779040973601547584}
+  comboWindow: 1.5
+--- !u!114 &4054917184253976744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545521814920935221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7aa690697d3c464eb092056ddd89184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsHandler: {fileID: 4463358133749106437}
 --- !u!1 &2392400694231240333
 GameObject:
   m_ObjectHideFlags: 0
