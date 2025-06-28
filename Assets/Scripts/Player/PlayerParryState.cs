@@ -1,40 +1,37 @@
 using UnityEngine;
 
-public class PlayerRollState : IPlayerState
+public class PlayerParryState : IPlayerState
 {
+
     private PlayerStateMachine stateMachine;
     private PlayerMovementController movementController;
     private CombatController combatController;
-    private float rollTimer;
-
-    public PlayerRollState(PlayerStateMachine stateMachine, PlayerMovementController movementController, CombatController combatController)
+    private float parryTimer;
+    public PlayerParryState(PlayerStateMachine stateMachine, PlayerMovementController movementController, CombatController combatController)
     {
         this.stateMachine = stateMachine;
         this.movementController = movementController;
         this.combatController = combatController;
     }
-
     public void Enter()
     {
         movementController.canMove = false;
-        rollTimer = combatController.RollDuration;
-        combatController.OnRoll(); // Roll baþlat
     }
 
     public void Tick()
     {
-        rollTimer -= Time.deltaTime;
+        parryTimer -= Time.deltaTime;
 
-        if (rollTimer <= 0)
+        if (parryTimer <= 0)
         {
             stateMachine.ChangeState(new PlayerIdleState(stateMachine, movementController, combatController));//bu "animasyonlar eklendiðinde" sonradan kaldýrýlacak
-            combatController.isRolling = false;//bu "animasyonlar eklendiðinde" sonradan kaldýrýlacak
+            combatController.isParrying = false;//bu "animasyonlar eklendiðinde" sonradan kaldýrýlacak
         }
     }
 
     public void Exit()
     {
         movementController.canMove = true;
-        combatController.OnRollFinish();
+        combatController.isParrying= false;
     }
 }

@@ -31,7 +31,7 @@ public class PlayerAttackState : IPlayerState
         attackTimer -= Time.fixedDeltaTime;
         if (attackTimer <= 0f)
         {
-            stateMachine.ChangeState(new PlayerIdleState(stateMachine, movementController, combatController)); // Saldýrý bitince Idle’a dön
+            stateMachine.ChangeState(new PlayerIdleState(stateMachine, movementController, combatController)); //bu "animasyonlar eklendiðinde" sonradan kaldýrýlacak
         }
     }
 

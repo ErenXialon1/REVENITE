@@ -25,8 +25,9 @@ public class CombatController : MonoBehaviour
     public bool canAttack = true;
     public bool IsAttacking => isAttacking = false;
     
-    private bool isParrying = false;
+    public bool isParrying = false;
     public bool canParry;
+    public bool isParryStance = false;
     private bool isAttacking;
 
     public event System.Action AttackFinished;
@@ -236,16 +237,26 @@ public class CombatController : MonoBehaviour
     public void OnParry()
     {
 
-        if (isParrying || isRolling || isAttacking) return;
+        if (!canParry || isParrying || isRolling || isAttacking) return;
 
         isParrying = true;
-        animator.SetTrigger("Parry");
+        canParry = false;
+        animator.SetTrigger("Parry");////bu "animasyonlar eklendiğinde" sonradan kaldırılacak bu kısım full animasyon eventler ile dönecek
         Debug.Log("CombatController: Parry triggered.");
         // Parry aktifliği birkaç saniye sürebilir
-        Invoke(nameof(EndParry), 0.3f); // örnek süre
     }
-    private void EndParry()
+    
+    // Animation Event ile çağrılacak
+    public void OnParryStanceStart()
     {
-        isParrying = false;
+        isParryStance = true;
     }
+
+    // Animation Event ile çağrılacak
+    public void OnParryStanceEnd()
+    {
+        isParryStance = false;
+    }
+
+    private void ResetParry() => canParry = true;
 }

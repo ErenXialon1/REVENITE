@@ -118,7 +118,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
 
     public void OnParryPerformed(InputAction.CallbackContext context)
     {
-        //Debug.Log("Parry performed");
+        Debug.Log("Parry performed");
         ParryEvent?.Invoke();
     }
 

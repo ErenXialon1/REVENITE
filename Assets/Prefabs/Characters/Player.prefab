@@ -223,16 +223,17 @@ MonoBehaviour:
     m_Bits: 512
   canAttack: 1
   canParry: 0
-  rollDistance: 5
-  rollDuration: 0.5
+  rollDistance: 7.5
+  rollDuration: 0.35
   rollCooldown: 0.5
+  isRolling: 0
   canRoll: 1
   rollSpeedCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
+      time: 0.04166794
+      value: 0.9928589
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -240,22 +241,22 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.5
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      time: 0.5458374
+      value: 0.8761902
+      inSlope: -0.53063357
+      outSlope: -0.53063357
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.2727227
     - serializedVersion: 3
-      time: 1
+      time: 1.0041809
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -2.9003358
+      outSlope: -2.9003358
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.08389172
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

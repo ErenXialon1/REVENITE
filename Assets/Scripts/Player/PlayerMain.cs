@@ -37,4 +37,8 @@ public class PlayerMain : MonoBehaviour
             stateMachine.ChangeState(new PlayerAttackState(stateMachine, movementController, combatController, skillToExecute));
         }
     }
+    public void StartParry()
+    {
+        stateMachine.ChangeState(new PlayerParryState(stateMachine, movementController, combatController));
+    }
 }
