@@ -12,10 +12,12 @@ public interface IInputReader
     event Action ParryEvent;
     event Action InteractEvent;
     event Action PreviousEvent;
+    event Action DashEvent;
     void OnMovePerformed(InputAction.CallbackContext context);
     void OnMoveCanceled(InputAction.CallbackContext context);
     void OnLightAttackPerformed(InputAction.CallbackContext context);
     void OnAttackCanceled(InputAction.CallbackContext context);
+    void OnDashPerformed(InputAction.CallbackContext context);
     void OnRollPerformed(InputAction.CallbackContext context);
     void OnParryPerformed(InputAction.CallbackContext context);
     void OnInteract(InputAction.CallbackContext context);

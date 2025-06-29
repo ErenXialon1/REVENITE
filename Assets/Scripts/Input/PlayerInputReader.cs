@@ -22,7 +22,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
     public event Action ParryEvent;
     public event Action InteractEvent;
     public event Action PreviousEvent;
-
+    public event Action DashEvent;
 
 
     private void Awake() // Awake kullanmak, OnEnable'dan önce baþlatma garantisi için daha güvenlidir.
@@ -115,7 +115,12 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
         Debug.Log("Roll performed");
         RollEvent?.Invoke();
     }
+    public void OnDashPerformed(InputAction.CallbackContext context)
+    {
+        Debug.Log("Dash Performed");
+        DashEvent?.Invoke();
 
+    }
     public void OnParryPerformed(InputAction.CallbackContext context)
     {
         Debug.Log("Parry performed");
@@ -143,6 +148,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
         inputActions.PlayerFighting.Moves.canceled -= OnMoveCanceled;
         inputActions.PlayerFighting.Attack.performed -= OnLightAttackPerformed;
         inputActions.PlayerFighting.Attack.canceled -= OnAttackCanceled;
+        inputActions.PlayerFighting.Dash.performed -= OnDashPerformed;
         inputActions.PlayerFighting.DodgeRoll.performed -= OnRollPerformed;
         inputActions.PlayerFighting.Parry.performed -= OnParryPerformed;
     }
@@ -163,6 +169,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
                 inputActions.PlayerFighting.Moves.canceled += OnMoveCanceled;
                 inputActions.PlayerFighting.Attack.performed += OnLightAttackPerformed;
                 inputActions.PlayerFighting.Attack.canceled += OnAttackCanceled;
+                inputActions.PlayerFighting.Dash.performed += OnDashPerformed;
                 inputActions.PlayerFighting.DodgeRoll.performed += OnRollPerformed;
                 inputActions.PlayerFighting.Parry.performed += OnParryPerformed;
 

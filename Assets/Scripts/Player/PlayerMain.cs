@@ -41,4 +41,8 @@ public class PlayerMain : MonoBehaviour
     {
         stateMachine.ChangeState(new PlayerParryState(stateMachine, movementController, combatController));
     }
+    public void StartDash()
+    {
+        stateMachine.ChangeState(new PlayerDashState(stateMachine, movementController, combatController));
+    }
 }

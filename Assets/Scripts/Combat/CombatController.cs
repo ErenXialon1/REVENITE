@@ -21,16 +21,22 @@ public class CombatController : MonoBehaviour
     private SkillData currentSkillData;// kullanılan yeteneğe bağlı olarak değişmeli
     public SkillData CurrentSkillData => currentSkillData;
     public ComboData CurrentCombo { get; private set; }
-
+    private bool isAttacking;
     public bool canAttack = true;
     public bool IsAttacking => isAttacking = false;
     
     public bool isParrying = false;
     public bool canParry;
     public bool isParryStance = false;
-    private bool isAttacking;
+   
 
     public event System.Action AttackFinished;
+    [Header("Dash Settings")]
+    [SerializeField] private float dashDistance = 5f; // Dodge mesafesi
+    [SerializeField] private float dashDuration = 0.5f; // Dodge süresi
+    [SerializeField] private float dashCooldown = 0.5f; // Dodge süresi
+    public float isDashing;
+    public float canDash;
     [Header("Dodge Roll Settings")]
     [SerializeField] private float rollDistance = 5f; // Dodge mesafesi
     [SerializeField] private float rollDuration = 0.5f; // Dodge süresi

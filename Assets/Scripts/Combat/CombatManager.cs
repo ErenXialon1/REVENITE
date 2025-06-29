@@ -84,6 +84,7 @@ public class CombatManager : MonoBehaviour
             inputReader.AttackEvent += OnAttackPressed;
             inputReader.RollEvent += OnRollPressed;
             inputReader.ParryEvent += OnParryPressed;
+            inputReader.DashEvent += OnDashPressed;
         }
         if (combatController != null)
         {
@@ -99,6 +100,7 @@ public class CombatManager : MonoBehaviour
             inputReader.AttackEvent -= OnAttackPressed;
             inputReader.RollEvent -= OnRollPressed;
             inputReader.ParryEvent -= OnParryPressed;
+            inputReader.DashEvent -= OnDashPressed;
         }
         if (combatController != null)
         {
@@ -247,5 +249,9 @@ public class CombatManager : MonoBehaviour
     public void OnParryPressed()
     {
         playerMain.StartParry();
+    }
+    public void OnDashPressed()
+    {
+        playerMain.StartDash();
     }
 }

@@ -337,6 +337,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""088c0117-771a-4d7c-9c04-aa0a9f512f96"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -546,6 +555,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""OnlyKeyboard"",
                     ""action"": ""DodgeRoll"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3c6fc287-2761-4acb-a92d-46646191e2c6"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse;OnlyKeyboard"",
+                    ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1934,6 +1954,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_PlayerFighting_Attack = m_PlayerFighting.FindAction("Attack", throwIfNotFound: true);
         m_PlayerFighting_Parry = m_PlayerFighting.FindAction("Parry", throwIfNotFound: true);
         m_PlayerFighting_DodgeRoll = m_PlayerFighting.FindAction("DodgeRoll", throwIfNotFound: true);
+        m_PlayerFighting_Dash = m_PlayerFighting.FindAction("Dash", throwIfNotFound: true);
         // PlayerMinigame
         m_PlayerMinigame = asset.FindActionMap("PlayerMinigame", throwIfNotFound: true);
         m_PlayerMinigame_Moves = m_PlayerMinigame.FindAction("Moves", throwIfNotFound: true);
@@ -2171,6 +2192,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerFighting_Attack;
     private readonly InputAction m_PlayerFighting_Parry;
     private readonly InputAction m_PlayerFighting_DodgeRoll;
+    private readonly InputAction m_PlayerFighting_Dash;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerFighting".
     /// </summary>
@@ -2198,6 +2220,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "PlayerFighting/DodgeRoll".
         /// </summary>
         public InputAction @DodgeRoll => m_Wrapper.m_PlayerFighting_DodgeRoll;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerFighting/Dash".
+        /// </summary>
+        public InputAction @Dash => m_Wrapper.m_PlayerFighting_Dash;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -2236,6 +2262,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @DodgeRoll.started += instance.OnDodgeRoll;
             @DodgeRoll.performed += instance.OnDodgeRoll;
             @DodgeRoll.canceled += instance.OnDodgeRoll;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         /// <summary>
@@ -2259,6 +2288,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @DodgeRoll.started -= instance.OnDodgeRoll;
             @DodgeRoll.performed -= instance.OnDodgeRoll;
             @DodgeRoll.canceled -= instance.OnDodgeRoll;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         /// <summary>
@@ -3016,6 +3048,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDodgeRoll(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Dash" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDash(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "PlayerMinigame" which allows adding and removing callbacks.
