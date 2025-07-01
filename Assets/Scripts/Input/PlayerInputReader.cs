@@ -14,7 +14,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
     [SerializeField] private InputSystem_Actions inputActions;
     private InputActionMap currentMap;
 
-    // Event tanýmlarý
+    // Event definitions
     public event Action<Vector2> MovesEvent;
     public event Action<AttackInput> AttackEvent;
     public event Action AttackCanceledEvent;
@@ -25,7 +25,7 @@ public class PlayerInputReader : MonoBehaviour, IInputReader
     public event Action DashEvent;
 
 
-    private void Awake() // Awake kullanmak, OnEnable'dan önce baþlatma garantisi için daha güvenlidir.
+    private void Awake() // Awake if safer than Onenable
     {
         if (inputActions == null)
         {
