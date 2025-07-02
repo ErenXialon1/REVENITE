@@ -124,6 +124,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2732578775706659827, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
   m_PrefabInstance: {fileID: 1089823941}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &593334970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8042562619362344961, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
+  m_PrefabInstance: {fileID: 1089823941}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c0a6e454f3e464cba02ee674d07122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735864068
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +269,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2104768268239761005, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
+      propertyPath: canDash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104768268239761005, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
       propertyPath: canParry
       value: 1
       objectReference: {fileID: 0}
@@ -305,6 +320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7320934262373184423, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
+      propertyPath: inputReaderRef
+      value: 
+      objectReference: {fileID: 593334970}
     - target: {fileID: 8852130674565891642, guid: cf0fd4fa818eddb4b87c8cc879bb4ebe, type: 3}
       propertyPath: m_Enabled
       value: 1

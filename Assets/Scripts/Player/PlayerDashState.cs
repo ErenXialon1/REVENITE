@@ -5,7 +5,8 @@ public class PlayerDashState : IPlayerState
     private PlayerStateMachine stateMachine;
     private PlayerMovementController movementController;
     private CombatController combatController;
-    private float dashTimer;
+    private float dashTimer = 0.5f;
+
     public PlayerDashState(PlayerStateMachine stateMachine, PlayerMovementController movementController, CombatController combatController)
     {
         this.stateMachine = stateMachine;
@@ -15,6 +16,7 @@ public class PlayerDashState : IPlayerState
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Enter()
     {
+        combatController.OnDash();
         movementController.canMove = false;
     }
 

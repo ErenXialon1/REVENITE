@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using PixelCrushers.DialogueSystem.Articy.Articy_4_0;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,7 +18,7 @@ public class CombatController : MonoBehaviour
     
     [Header("Combat Settings")]
     private Vector2 attackDirection = Vector2.zero;
-    private Vector2 lastNonZeroDirection = Vector2.right; // varsayılan olarak aşağıya bakar
+    private Vector2 lastNonZeroDirection = Vector2.right;
     [SerializeField] LayerMask damagableLayer;
     private SkillData currentSkillData;// kullanılan yeteneğe bağlı olarak değişmeli
     public SkillData CurrentSkillData => currentSkillData;
@@ -35,8 +37,8 @@ public class CombatController : MonoBehaviour
     [SerializeField] private float dashDistance = 5f; // Dodge mesafesi
     [SerializeField] private float dashDuration = 0.5f; // Dodge süresi
     [SerializeField] private float dashCooldown = 0.5f; // Dodge süresi
-    public float isDashing;
-    public float canDash;
+    public bool isDashing;
+    public bool canDash;
     [Header("Dodge Roll Settings")]
     [SerializeField] private float rollDistance = 5f; // Dodge mesafesi
     [SerializeField] private float rollDuration = 0.5f; // Dodge süresi
@@ -191,7 +193,7 @@ public class CombatController : MonoBehaviour
         // Dodge yönü: Son hareket yönü veya sağa (default)
         Vector2 rollDirection = playerMovementController.LastMoveDirection.normalized;
         if (rollDirection == Vector2.zero) rollDirection = Vector2.right;
-        // Hareket uygula (lerp ile smooth hareket için)
+        // Hareket uygula (lerp ile smooth hareket iç
         
         StartCoroutine(PerformRollMovement(rollDirection));
         // Burada dodge yönü ve momentum eklenebilir
@@ -265,4 +267,14 @@ public class CombatController : MonoBehaviour
     }
 
     private void ResetParry() => canParry = true;
+    public void OnDash()
+    {
+        //if (!canDash || isRolling || isParrying || isAttacking || isDashing) return;
+        isDashing =true;
+        canDash = false;
+        Vector2 z = playerMovementController.LastMoveDirection.normalized;
+        rb.AddForce(z * dashDistance, ForceMode2D.Impulse);
+        
+        Debug.Log("allah");
+    }
 }
